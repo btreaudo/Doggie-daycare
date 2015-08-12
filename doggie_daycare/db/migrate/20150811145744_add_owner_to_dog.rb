@@ -1,5 +1,5 @@
 class AddOwnerToDog < ActiveRecord::Migration
   def change
-    add_column :dogs, :owner_name, :age
+    add_column :dogs, :ownername, :age
   end
 end

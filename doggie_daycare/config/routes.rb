@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :owners
+  resources :favorites
   resources :dogs
   get 'daycare/daycare'
 
