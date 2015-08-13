@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'thin'
 gem 'quiet_assets'
 gem 'stamp'
+#Add bootstrap and style
+gem 'starter_generators'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
