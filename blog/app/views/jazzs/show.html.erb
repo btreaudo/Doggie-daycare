@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @jazz.content %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @jazz.title %>
+</p>
+
+<%= link_to 'Edit', edit_jazz_path(@jazz) %> |
+<%= link_to 'Back', jazzs_path %>

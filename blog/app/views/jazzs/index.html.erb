@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Jazzs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jazzs.each do |jazz| %>
+      <tr>
+        <td><%= jazz.content %></td>
+        <td><%= jazz.title %></td>
+        <td><%= link_to 'Show', jazz %></td>
+        <td><%= link_to 'Edit', edit_jazz_path(jazz) %></td>
+        <td><%= link_to 'Destroy', jazz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jazz', new_jazz_path %>
