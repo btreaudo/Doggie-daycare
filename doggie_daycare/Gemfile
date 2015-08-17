@@ -18,6 +18,7 @@ gem 'quiet_assets'
 gem 'stamp'
 #Add bootstrap and style
 gem 'starter_generators'
+gem 'awesome_print'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

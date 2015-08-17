@@ -20,7 +20,8 @@ ActiveRecord::Schema.define(version: 20150812135944) do
     t.integer  "age"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "owner"
+    t.string   "owner_name"
+    t.integer  "owner_id"
   end
 
   add_index "dogs", ["owner_id"], name: "index_dogs_on_owner_id"
