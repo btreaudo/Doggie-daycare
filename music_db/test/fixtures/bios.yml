@@ -1,26 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  genre_id: 
+  bio: MyString
 
 two:
-  name: MyString
-  genre_id:
+  bio: MyString
 
 # == Schema Information
 #
-# Table name: artists
+# Table name: bios
 #
 #  id         :integer          not null, primary key
-#  name       :string
-#  genre_id   :integer
+#  bio        :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  bio_id     :integer
-#
-# Indexes
-#
-#  index_artists_on_bio_id    (bio_id)
-#  index_artists_on_genre_id  (genre_id)
 #

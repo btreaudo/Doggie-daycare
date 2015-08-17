@@ -15,6 +15,7 @@ namespace :db do
         artist.name = Faker::Name.first_name
         artist.genre_id = genre.id
 
+
         Song.populate 5..10 do |song|
           # Set the name and artist id
           song.name = Faker::Company.catch_phrase
