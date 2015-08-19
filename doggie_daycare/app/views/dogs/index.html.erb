@@ -23,8 +23,8 @@
         <td><%= dog.age %></td>
         <td><%= dog.try(:owner).try(:name) %></td>
         <td><%= link_to 'Show', dog %></td>
-        <td><%= link_to 'Edit', edit_dog_path(dog) %></td>
-        <td><%= link_to 'Destroy', dog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_dog_path(dog) %><i class="fa fa-pencil-square-o"></i></td>
+        <td><%= link_to 'Destroy', dog, method: :delete, data: { confirm: 'Are you sure?' } %><i class="fa fa-pencil-square-o"></i></td>
       </tr>
     <% end %>
   </tbody>

@@ -15,10 +15,10 @@
     <% @owners.each do |owner| %>
       <tr>
         <td><%= owner.name %></td>
-        <td><%= owner.phone %></td>
+        <td><%= owner.phone %> <i class="fa fa-mobile"></i></td>
         <td><%= link_to 'Show', owner %></td>
-        <td><%= link_to 'Edit', edit_owner_path(owner) %></td>
-        <td><%= link_to 'Destroy', owner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_owner_path(owner) %><i class="fa fa-pencil-square-o"></i></td>
+        <td><%= link_to 'Destroy', owner, method: :delete, data: { confirm: 'Are you sure?' } %><i class="fa fa-trash-o"></i></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Owner', new_owner_path %>
+<%= link_to 'New Owner', new_owner_path, class: "btn btn-success" %>
